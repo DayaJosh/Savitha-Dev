@@ -1,0 +1,9 @@
+{
+  "name": "Savitha Rameshkumar Real Estate",
+  "short_name": "Savitha",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#ffffff",
+  "theme_color": "#141414",
+  "icons": [{ "src": "/favicon.ico", "sizes": "48x48", "type": "image/x-icon" }]
+}
