@@ -17,7 +17,10 @@ Apply `supabase/migrations/20260919000000_create_leads.sql` to the configured Su
 
 - Build command: `pnpm build`
 - Build output directory: `dist`
+- Deploy command: `pnpm run deploy` (only when the Cloudflare project requires a deploy command)
 - Node.js version: 22
 - Environment variables: `VITE_SUPABASE_URL`, `VITE_SUPABASE_PUBLISHABLE_KEY`
+
+Do not use `npx wrangler deploy`: that command is for Workers and will fail for this static Pages site. If the project is Git-integrated, leave the Cloudflare **Deploy command** blank so Pages uploads `dist` after the build; otherwise use `pnpm run deploy`, which runs `wrangler pages deploy dist`.
 
 The repository includes `wrangler.toml`, security headers, search metadata, and SPA routing support for Cloudflare Pages.

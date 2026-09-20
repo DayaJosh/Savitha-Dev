@@ -1,3 +1,5 @@
 allowBuilds:
   '@swc/core': true
   esbuild: true
+  workerd: true
+  workerd: set this to true or false
